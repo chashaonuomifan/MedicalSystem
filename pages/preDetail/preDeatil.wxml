@@ -1,0 +1,43 @@
+<view class="v1">
+  <image src="../../images/g.jpg"></image>
+  <view class="v1-1">30元</view>
+  <view>已挂号</view>
+</view>
+
+<view class="v3">预约信息</view>
+<view class="v2">  
+  <view  class="v2-1">
+    <view >预约医院</view>
+    <view >预约科室</view>
+    <view >预约医生</view>
+    <view >预约挂号序号</view>
+    <view >预计就诊时间</view>
+    <view >挂号记账金额</view>
+    <view >就诊地址</view>
+  </view>
+  <view class="v2-2">
+    <view>广东省中芳村院区</view>
+    <view>骨科</view>
+    <view>{{predetail.dname}}</view>
+    <view>A{{predetail.num}}</view>
+    <view>{{predetail.date}} {{predetail.time}}</view>
+    <view>30元</view>
+    <view>门诊三楼外科</view>
+  </view>
+</view>
+<view class="v3">就诊人</view>
+<view class="v2">  
+  <view  class="v2-1">
+    <view >姓名</view>
+    <view >证件号码</view>
+    <view >手机号</view>
+    <view >就诊卡</view>
+  </view>
+  <view class="v2-2">
+    <view>{{predetail.nickName}}</view>
+    <view>{{predetail.idcard}}</view>
+    <view>{{predetail.phone}}</view>
+    <view>1005792698</view>
+  </view>
+</view>
+<button class="b1" style="width: 350px;" bind:tap="del">退号</button>

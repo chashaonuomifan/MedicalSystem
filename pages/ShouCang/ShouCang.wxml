@@ -1,0 +1,10 @@
+<view class="box">
+  <view class="list" wx:for="{{collectDataList}}" wx:key="index">
+    <view class="img">
+      <image src="{{item.src}}"/>
+    </view>
+    <view class="name">
+      {{item.name}}
+    </view>
+  </view>
+</view>

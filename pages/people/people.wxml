@@ -1,0 +1,13 @@
+<view class="v1" wx:for="{{peoples}}" wx:key="*this" data="{{item}}" >
+  <image src="../../images/12.jpg"></image>
+ <image src="{{item.avatar}}" mode="" class="tx"/>
+  <view class="v1-1">
+    <view class="v-c">就诊卡</view>
+    <view style="font-weight: bold;">{{item.nickName}}</view>
+    <view style="font-weight: bold;">身份证：{{item.idcard}}</view>
+    <image src="../../images/delete.png" mode="" class="del" bind:tap="del"  data-index="{{index}}"/>
+  </view>
+ 
+</view>
+
+<button bind:tap="goto" type="primary" class="btn2" form-type="submit" style="width: 80%;">添加就诊人</button>

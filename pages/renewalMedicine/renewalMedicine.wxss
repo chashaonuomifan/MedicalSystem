@@ -1,0 +1,72 @@
+/* index.wxss */
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+
+.form {
+  width: 100%;
+  max-width: 500rpx; /* 设置表单的最大宽度 */
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.label {
+  flex: 2;
+  font-size: 32rpx;
+}
+
+.input {
+  flex: 4;
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+
+.btn {
+  margin-top: 40rpx;
+  width: 100%;
+  max-width: 450rpx; /* 设置按钮的最大宽度 */
+  background-color: #007AFF;
+  color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.result {
+  margin-top: 40rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.swiper {
+  height: 25vh;
+  margin-bottom: 20px;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}

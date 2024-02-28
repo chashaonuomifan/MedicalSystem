@@ -1,0 +1,26 @@
+.box{
+  width: 97%;
+  margin: 10rpx;
+}
+.list{
+  height: 150rpx;
+  display: flex;
+  border-bottom: 1rpx solid grey;
+  margin-top: 10rpx;
+  padding: 10rpx;
+}
+
+.img{
+  flex:4;
+}
+.img>image{
+  width: 150rpx;
+  height: 150rpx;
+
+}
+.name{
+  flex: 6;
+  font-size: 50rpx;
+  justify-content: center;
+  line-height: 150rpx;
+}

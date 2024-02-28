@@ -1,0 +1,46 @@
+<view class="v1">
+  <image src="{{doctors2.pic}}"></image>
+  <view class="v2">
+    <view class="v2-n">{{doctors2.book}}</view>
+    <view class="v2-a">内科 {{doctors2.author}}</view>
+    <view>简介：{{doctors2.jj}}</view>
+    <view class="v2-s">擅长：{{doctors2.tj}}</view>
+  </view>
+</view>
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2023-09-01" end="2024-01-01" bindchange="bindDateChange">
+    <view class="picker">
+      {{date}}
+    </view>
+    <view>已选：</view>
+  </picker>
+</view>
+<view  style="margin-top: 5px;">
+ <view style="display: flex;flex-direction: row;justify-content: space-around;">
+   <view class="tableTou">
+     出诊时间
+   </view>
+   <view class="tableTou">
+     挂号费
+   </view>
+   <view class="tableTou">
+     操作
+   </view>
+ </view>
+
+ <view wx:for="{{dateData}}" wx:key="{{index}}" data-index="{{index}}" bindtap="lookCompany" >
+   <view style="display: flex;flex-direction: row;justify-content: space-around;">
+     <view class="tableTR">
+      {{date}} {{item.time}}
+     </view>
+     <view class="tableTR">
+       30元
+     </view>
+     
+     <view class="tableTR" >
+       <button style="width: 160rpx;"class="b1" bind:tap="guahao" data-time="{{item.time}}">挂号</button>
+     </view>
+   </view>
+ </view>
+</view>
+

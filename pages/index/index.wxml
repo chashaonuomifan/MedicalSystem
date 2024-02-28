@@ -1,0 +1,69 @@
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="3000" indicator-dots="gery" indicator-active-color="white">
+  <swiper-item wx:for="{{imgs}}" wx:key="*this">
+    <image src="{{item}}" class="img" />
+  </swiper-item>
+</swiper>
+<view class="text">
+便民服务
+</view>
+<view class="content">
+<navigator url="../askdoc/askdoc">
+<view class="service">
+<image class="left" style="width: 60px; height: 60px;" src="../../images/service1.png" mode=""/>
+<view class="right">
+<view class="up">专家问诊</view>
+<view class="down">支持常见病、慢性病在线咨询、续方</view>
+</view>
+</view>
+</navigator>
+<navigator url="../talkdoc/talkdoc">
+<view class="service">
+<image class="left" style="width: 60px; height: 60px;" src="../../images/service2.png" mode=""/>
+<view class="right">
+<view class="up">云义诊</view>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class="content">
+  <navigator url="../health/health">
+<view class="service">
+<image class="left" style="width: 60px; height: 60px;" src="../../images/service3.png" mode=""/>
+<view class="right">
+<view class="up">电子病历</view>
+<view class="down"></view>
+</view>
+</view>
+</navigator>
+<navigator url="/pages/medicine/medicine">
+<view class="service">
+<image class="left" style="width: 60px; height: 60px;" src="../../images/service4.png" mode=""/>
+<view class="right">
+<view class="up">自主购药</view>
+<view class="down">只限院内制剂</view>
+</view>
+</view>
+</navigator>
+</view>
+<view class="content">
+<navigator url="../news/news">
+<view class="service">
+<image class="left" style="width: 60px; height: 60px;" src="../../images/service5.png" mode=""/>
+<view class="right">
+<view class="up">健康小知识</view>
+</view>
+</view>
+</navigator>
+</view>
+<view class="text">
+特色门诊
+</view>
+<view class="content">
+<view class="service">
+<image class="left" style="width: 60px; height: 60px;" src="../../images/service6.png" mode=""/>
+<view class="right1">
+<view class="up">治末病健康管理中心</view>
+</view>
+</view>
+</view>

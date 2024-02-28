@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* 其他样式保持不变，只更新 logo 相关的样式 */
+
+.logo-container {
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 100px; /* 设定图片宽度 */
+  height: 100px; /* 设定图片高度 */
+  border-radius: 50%; /* 使图片变成圆形 */
+}
+
+
+.input-container {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.input-item {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-btn {
+  width: 90%;
+  background-color: #1AAD19;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.register-link {
+  margin-top: 20px;
+}

@@ -1,0 +1,10 @@
+<!--pages/news/news.wxml-->
+<view class="top">
+健康养生类资讯新闻动态
+</view>
+<view class="box">
+  <view class="item" wx:for="{{newsData}}" wx:key="*this" data-id="{{item.id}}" wx:if="{{index>=min&&index<=max}}" bind:tap="gotoDetail">
+    <view><image src="{{item.picUrl}}"></image></view>
+    <view>{{item.title}} —— {{item.ctime}}</view>
+  </view>
+</view>

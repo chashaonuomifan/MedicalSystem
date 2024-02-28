@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="logo-container">
+    <image src="../../images/logo.jpg" class="logo"></image>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="input-container">
+      <input name="username" class="input-item" type="text" placeholder="请输入用户名"/>
+    </view>
+    <view class="input-container">
+      <input name="password" class="input-item" type="password" placeholder="请输入密码"/>
+    </view>
+    <button class="login-btn" formType="submit">登录</button>
+  </form>
+  <view class="register-link">
+    <navigator url="/pages/register/register">没有账号？立即注册</navigator>
+  </view>
+</view>

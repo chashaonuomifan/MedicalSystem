@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "SearchBar":"/components/SearchBar"
+  },
+  "navigationBarTitleText": "智慧医疗-药物"
+}

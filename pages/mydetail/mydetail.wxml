@@ -1,0 +1,92 @@
+<!--pages/mydetail/mydetail.wxml-->
+<view class="level top-box">
+  <view class="avatar">
+    <image src="{{avatar}}" mode="widthFix"></image>
+  </view>
+  <view class="level info">
+    <view>
+      <view class="name">{{nickName}}</view>
+      <view class="tel">{{phone}}</view>
+    </view>
+    <view bindtap="editClick">🖊</view>
+  </view>
+</view>
+<!-- 数据内容 -->
+<form catchsubmit="formSubmit" catchreset="formReset">
+  <view class="box">
+    <view class="level nav">
+      <view class="dot"></view>
+      <view class="title">基本信息</view>
+    </view>
+    <view class="row">
+      <view>性别</view>
+      <picker class="right" bindchange="bindPickerChange" value="{{indexSex}}" range="{{arraySex}}">
+        <text>{{arraySex[indexSex]}}</text>
+        <text class="triangle">▼</text>
+      </picker>
+    </view>
+    <view class="row">
+      <view>年龄</view>
+      <view class="right">
+        <input name="age" placeholder="请输入年龄" type="number" maxlength="3" />
+      </view>
+    </view>
+    <view class="row">
+      <view>电话</view>
+      <view class="right">
+        <input name="" placeholder="请输入电话信息" maxlength="20" />
+      </view>
+    </view>
+    <view class="row">
+      <view>身份证号</view>
+      <view class="right">
+        <input name="idcard" placeholder="请输入身份证号" type="number" maxlength="20" />
+      </view>
+    </view>
+    <view class="row end">
+      <view>婚姻状况</view>
+      <picker class="right" bindchange="bindPickerChange" value="{{indexMarry}}" range="{{arrayMarry}}">
+        <text>{{arrayMarry[indexMarry]}}</text>
+        <text class="triangle">▼</text>
+      </picker>
+    </view>
+  </view>
+  <view class="level btn-area">
+    <button formType="reset">重置</button>
+    <button type="primary" formType="submit">提交</button>
+  </view>
+</form>
+<!-- 弹出层 -->
+<view class="mask-all" wx:if="{{show}}" bindtap="cancelMask"></view>
+<view class="mask-box" wx:if="{{show}}">
+  <block wx:if="{{hobby}}">
+    <view class="center">
+      <input bindinput="inputHobbyClick" value="{{hobbyVal}}" placeholder="请输入兴趣爱好（5字以内哦~）" maxlength="5" />
+    </view>
+  </block>
+  <block wx:else>
+    <view class="row level">
+      <view>靓照</view>
+      <view class="right" bindtap="selectImage" data-tag="0">
+        <image class="head-img" src="{{tempList.avatarTemp}}"></image>
+      </view>
+    </view>
+    <view class="row">
+      <view>姓名</view>
+      <view class="right">
+        <input placeholder="请输入姓名" bindinput="inputNick" value="{{tempList.nameTemp}}" maxlength="20" />
+      </view>
+    </view>
+    <view class="row">
+      <view>电话</view>
+      <view class="right">
+        <input placeholder="请输入联系电话" bindinput="inputPhone" value="{{tempList.phoneTemp}}" type="number" maxlength="11" />
+      </view>
+    </view>
+  </block>
+  <view class="level mask-btn">
+    <view bindtap="cancelMask">取消</view>
+    <view bindtap="defineMask">确定</view>
+  </view>
+</view>
+

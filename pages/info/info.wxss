@@ -1,0 +1,20 @@
+image{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  float: left;
+  margin-right: 7px;
+}
+.v1{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.v2{
+  font-size: 14px;
+}
+.v{
+  line-height: 35px;
+  border-bottom: 1px solid #d9d9d9;
+  height: 80px;
+}

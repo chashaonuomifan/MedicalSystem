@@ -1,0 +1,41 @@
+.img{
+  width: 100%;
+  height: 150px;
+}
+.text{
+  font-size: larger;
+  font-weight: bold;
+  margin: 15px;
+}
+.content{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.service{
+  margin-left: 15px;
+  display:flex;
+ 
+}
+.left{
+width: 40%;
+}
+.right{
+  width: 110px;
+  padding-left: 10px;
+}
+.right1{
+  margin-top: 5px;
+  width:200px;
+  margin-left: 10px;
+}
+.up{
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.down{
+  font-size: small;
+  color: grey;
+}

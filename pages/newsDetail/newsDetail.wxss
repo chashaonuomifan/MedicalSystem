@@ -1,0 +1,19 @@
+.title{
+  font-size: large;
+  padding: 10rpx;
+  text-align: center;
+}
+.img{
+  padding-left: 50rpx;
+  width: 100%;
+}
+.content{
+  padding: 10rpx;
+  line-height: 55rpx;
+  
+}
+.time{
+ padding-right: 30rpx;
+  float: right;
+
+}

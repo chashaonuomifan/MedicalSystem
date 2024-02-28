@@ -1,0 +1,121 @@
+.goodsItem{
+  margin-bottom: 10px;
+  margin-left: 20px;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+}
+.left{
+  width: 30%;
+  height: 100px;
+  padding: 10px;
+
+}
+.right{
+  padding-top: 12px;
+width: 70%;
+
+border-right: 10px;
+}
+.name{
+  font-size: 15px;
+  font-weight: bold;
+}
+.category{
+  padding-top: 5px;
+  font-size: 13px;
+  color:grey;
+}
+.price{
+  padding-top: 5px;
+  font-size: 12px;
+  color: red;
+}
+.goshop{
+  font-size: 13px;
+  color: grey;
+}
+.btn{
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-evenly;
+}
+
+
+/* page/home/home.wxss */
+.containers{
+  margin-top: 60rpx;
+}
+
+.c-list{
+  display: flex;  
+}
+.potion-list{
+  display: flex;
+}
+.c-item {
+  width:680rpx;
+  height: 410rpx;
+  position: relative;
+  color: #fff;
+  margin-bottom: 30rpx;
+}
+.nav {
+    height: 80rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    font-size: 16px;
+    white-space: nowrap;
+    color: #999;
+    margin-top: -50rpx;
+   display: flex;
+   padding: 0 30rpx;
+}
+
+
+.nav-items{
+    width: 18%;
+    display: inline-block;
+    text-align: center;
+    margin-left:0rpx;
+}
+.active{
+    color: #000;
+     font-weight: 700;
+      height: 60rpx;         
+}
+ .selects{
+     border-bottom: 3rpx solid red;
+}
+.tab-box{
+  width: 100vw;
+  height: 700px;
+  box-sizing: border-box;  
+}
+.tab-content{
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    padding-top: 20rpx;
+    margin-right: 20rpx;
+}
+
+.content{
+    overflow-y: scroll;          
+}
+.codekongbai{
+  margin-top:200rpx;
+  display: block;
+  width: 100%;
+  overflow-y: scroll; 
+}
+
+.model-item image{
+  width: 100%;
+  height: 100%;
+   border-radius: 20rpx;
+
+}
+

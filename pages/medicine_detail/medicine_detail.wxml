@@ -1,0 +1,25 @@
+<view class="main" >
+ 
+  <view class="img">
+    <image src="{{src}}" mode="widthFix"/>
+  </view>
+  <view class="name" style="background-color:white; border: 5px solid white; border-radius: 10px;">{{name}}</view>
+  <view style="margin-left: 10rpx; font-size: large; font-weight: bold;">描述：</view>
+  <view class="description" style="background-color:white; border: 5px solid white; border-radius: 10px;"  >
+    
+    {{description}}
+  </view>
+  <view style="margin-left: 10rpx; font-size: large; font-weight: bold;">用法:</view>
+  <view class="use" style="background-color:white; border: 5px solid white; border-radius: 10px;">
+    {{use}}
+  </view>
+</view>
+
+<view class="box">
+  <view class="shoucang" bind:tap="TapShoucang" data-change="{{change}}">
+    <text class="iconfont {{change==0?'icon-shoucang':'icon-shoucang1'}}"></text>
+    <view>{{change == false? '点击收藏':'已收藏'}}</view>
+  </view>
+  <!-- <view>我的收藏</view> -->
+</view>
+

@@ -1,0 +1,15 @@
+<!--pages/newsDetail/newsDetail.wxml-->
+<view class="title">
+  {{newsDetail.title}}
+</view>
+<view class="img">
+<image src="{{newsDetail.picUrl}}" mode="widthFix"/>
+</view>
+<view class="content">
+{{newsDetail.description}}
+</view>
+<view class="time">
+{{newsDetail.ctime}}
+</view>
+<view>
+</view>

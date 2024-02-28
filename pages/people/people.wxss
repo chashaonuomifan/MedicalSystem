@@ -1,0 +1,41 @@
+image{
+  display: flex;
+  height: 150px;
+  width: 320px;
+  margin: 20px auto;
+  border-radius: 15px;
+  
+}
+.v1{
+  position: relative;
+  line-height: 30px;
+}
+.v-c{
+  line-height: 50px;
+  margin-left: 130px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.v1-1{
+  position: absolute;
+  top: 0;
+  left: 120px;
+  padding: 10px;
+ 
+}
+.del{
+  position: absolute;
+  top: 130rpx;
+  left: 320rpx;
+  width: 100rpx; 
+  height: 100rpx;
+}
+.tx{
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 95rpx;
+}
+

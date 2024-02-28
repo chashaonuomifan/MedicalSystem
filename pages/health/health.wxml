@@ -1,0 +1,47 @@
+<view class="container">
+  <swiper class="swiper" autoplay interval="3000">
+    <swiper-item>
+      <image class="slide-image" src="/images/kf1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="slide-image" src="/images/kf2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="slide-image" src="/images/kf3.jpg"></image>
+    </swiper-item>
+  </swiper>
+  <view class="header">
+    <view class="info">
+      <image class="logo" src="/images/logo.jpg"></image>
+      <view class="item">
+        <text class="label">姓名：</text>
+        <input class="input" placeholder="请输入患者姓名" bindinput="onInputPatientName" value="{{patientName}}"/>
+      </view>
+      <view class="item">
+        <text class="label">性别：</text>
+        <input class="input" placeholder="请输入患者性别" bindinput="onInputPatientGender" value="{{patientGender}}"/>
+      </view>
+      <view class="item">
+        <text class="label">年龄：</text>
+        <input class="input" placeholder="请输入患者年龄" bindinput="onInputPatientAge" value="{{patientAge}}"/>
+      </view>
+    </view>
+    <view class="menu">
+      <scroll-view scroll-y class="section-list">
+        <block wx:for="{{sections}}" wx:for-index="index">
+          <view class="section-item" bindtap="onSelectSection" data-section-index="{{index}}">
+            {{index+1}}. {{item.title}}
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="main">
+    <view class="section-title">{{sections[currentSectionIndex].title}}</view>
+    <textarea class="section-content" style="width: calc(100vw - 40rpx); height: 300rpx; border: 1rpx solid #ccc; padding: 10rpx;" value="{{sections[currentSectionIndex].content}}" bindinput="onInputSectionContent"></textarea>
+  </view>
+  <view class="footer">
+    <button class="btn" bindtap="onSave">保存</button>
+    <button class="btn">打印</button>
+  </view>
+</view>

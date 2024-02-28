@@ -1,0 +1,75 @@
+.main{
+background-color: #fafafa;
+
+}
+.img{
+  text-align: center;
+}
+.name{
+font-weight: bold;
+font-size: larger;
+margin-left: 10rpx;
+margin-right: 10rpx;
+margin-top: 20rpx;
+    
+}
+.description{
+  border-bottom:1rpx black solid ;
+  font-size: larger;
+  margin: 0 15rpx 0 15rpx;
+}
+
+.use{
+  margin-top: 10rpx;
+  font-size: 38rpx;
+  margin: 0 15rpx 0 15rpx;
+}
+.box{
+  
+}
+.shoucang{
+ margin: 10rpx;
+  height: 75rpx;
+  width: 97%;
+  text-align: center;
+  display: flex;
+  border: 1rpx solid;
+  border-radius: 15rpx;
+  justify-content: center;
+  background-color: rgb(57, 212, 240);
+}
+.shoucang>text{
+  font-size: 60rpx;
+ 
+}
+.shoucang > view{
+  justify-content: center;
+  font-size: 60rpx;
+  line-height: 55rpx;
+  margin-left: 10rpx;
+}
+
+
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4359246 */
+  src: url('//at.alicdn.com/t/c/font_4359246_uzbiu7s4ck.woff2?t=1701762230359') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4359246_uzbiu7s4ck.woff?t=1701762230359') format('woff'),
+       url('//at.alicdn.com/t/c/font_4359246_uzbiu7s4ck.ttf?t=1701762230359') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shoucang:before {
+  content: "\eca7";
+}
+
+.icon-shoucang1:before {
+  content: "\e8c6";
+}

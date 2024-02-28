@@ -1,0 +1,40 @@
+<!-- index.wxml -->
+
+<view class="page">
+  <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
+    <block wx:for="{{imageUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image class="swiper-image" src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="container">
+    <view class="title">续药便民</view>
+
+    <view class="form">
+      <view class="form-item">
+        <view class="label">姓名：</view>
+        <input class="input" placeholder="请输入姓名" value="{{name}}" bindinput="onNameInput" />
+      </view>
+      <view class="form-item">
+        <view class="label">电话：</view>
+        <input class="input" placeholder="请输入电话号码" value="{{phone}}" bindinput="onPhoneInput" />
+      </view>
+      <view class="form-item">
+        <view class="label">药品名称：</view>
+        <input class="input" placeholder="请输入药品名称" value="{{medicine}}" bindinput="onMedicineInput" />
+      </view>
+      <view class="form-item">
+        <view class="label">药品数量：</view>
+        <input class="input" type="number" placeholder="请输入药品数量" value="{{quantity}}" bindinput="onQuantityInput" />
+      </view>
+    </view>
+
+    <button class="btn" bindtap="onSubmit">提交订单</button>
+
+    <view wx:if="{{submitted}}">
+      <view class="result">{{resultMessage}}</view>
+    </view>
+  </view>
+</view>

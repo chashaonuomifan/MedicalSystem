@@ -1,0 +1,58 @@
+.title{
+  font-weight: bold;
+  text-align: center;
+  font-size: larger;
+  display: inline-block;
+  margin-left: 140px;
+
+ 
+}
+.page-section{
+  margin-left: 5px;
+}
+.btn2{
+  display: flex;
+  float: right;
+  position: relative;
+  top: 5rpx;
+  right: 5rpx;
+  
+  
+}
+.upgrade{
+  
+  background-color: #008efa;
+  color:white;
+  text-align: center;
+  vertical-align:center;
+  font-size: small;
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.v1{
+  border: gray solid 1px;
+  margin: 10px;
+  
+}
+.page-section{
+
+  display: flex;
+ 
+}
+
+.weui-cell__hd{
+  display: inline-block;
+
+}
+.btn{
+  position: relative;
+  left:340px;
+  top: 30px;
+
+}
+.big{
+
+}

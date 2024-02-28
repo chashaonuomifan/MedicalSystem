@@ -1,0 +1,84 @@
+<view class="last">
+  <view class="containers">
+      <!-- tab导航栏 -->
+      <!-- scroll-left属性可以控制滚动条位置 -->
+      <!-- scroll-with-animation滚动添加动画过渡 -->
+      <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+        <block wx:for="{{modleList}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+          <view class="nav-items nav-item{{idx}} navitems{{idx}}  {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">
+            <text class="text-title {{currentTab == idx?'selects':''}}">{{navItem.name}}</text>
+          </view>
+        </block>
+      </scroll-view>
+      <!-- 页面内容 -->
+      <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">
+   
+        <swiper-item>
+        <navigator url="../doctorDetail/doctorDetail" >
+          <view class="goodsItem" wx:for="{{doctors}}" wx:key="*this" data-id="{{item.id}}" bind:tap="gotodetail">
+            <image class="left" mode="widthFix" src="{{item.pic}}" style="width: 80px; "></image>
+      <view class="right">
+        <view class="name" >{{item.book}}</view>
+        <view class="category" >{{item.author}}</view>
+        <view class="price">{{item.tj}}</view>
+      </view>
+          </view>
+        </navigator>
+        </swiper-item>
+
+        <swiper-item>
+          <view class="goodsItem" wx:for="{{doctors2}}" wx:key="*this">
+            <image class="left" mode="widthFix" src="{{item.pic}}" style="width: 80px; "></image>
+      <view class="right">
+        <view class="name" >{{item.book}}</view>
+        <view class="category" >{{item.author}}</view>
+        <view class="price">{{item.tj}}</view>
+      </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="goodsItem" wx:for="{{doctors3}}" wx:key="*this">
+            <image class="left" mode="widthFix" src="{{item.pic}}" style="width: 80px; "></image>
+      <view class="right">
+        <view class="name" >{{item.book}}</view>
+        <view class="category" >{{item.author}}</view>
+        <view class="price">{{item.tj}}</view>
+      </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="goodsItem" wx:for="{{doctors4}}" wx:key="*this">
+            <image class="left" mode="widthFix" src="{{item.pic}}" style="width: 80px; "></image>
+      <view class="right">
+        <view class="name" >{{item.book}}</view>
+        <view class="category" >{{item.author}}</view>
+        <view class="price">{{item.tj}}</view>
+      </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="goodsItem" wx:for="{{doctors5}}" wx:key="*this">
+            <image class="left" mode="widthFix" src="{{item.pic}}" style="width: 80px; "></image>
+      <view class="right">
+        <view class="name" >{{item.book}}</view>
+        <view class="category" >{{item.author}}</view>
+        <view class="price">{{item.tj}}</view>
+      </view>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class="goodsItem" wx:for="{{doctors6}}" wx:key="*this">
+            <image class="left" mode="widthFix" src="{{item.pic}}" style="width: 80px; "></image>
+      <view class="right">
+        <view class="name" >{{item.book}}</view>
+        <view class="category" >{{item.author}}</view>
+        <view class="price">{{item.tj}}</view>
+      </view>
+          </view>
+        </swiper-item>
+      </swiper>
+
+    </view>
+  </view>
+
+  

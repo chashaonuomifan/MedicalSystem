@@ -1,0 +1,19 @@
+<!-- WXML -->
+<view class="search-bar">
+  <input class="search-input" 
+    bindinput="onInput"
+  model:value="{{keyword}}"
+   placeholder="请输入关键字"/>
+  <button class="search-cancle" bindtap="onClear">清空</button>
+</view>
+
+<view class="medicine-list">
+  <view wx:for="{{filteredMedicineList}}" wx:key="name" 
+           data-name="{{item.name}}"
+          data-src="{{item.src}}"
+          data-description="{{item.description}}"
+          data-use="{{item.use}}"
+          bind:tap="toDetail">
+    <text>{{item.name}}</text>
+  </view>
+</view>

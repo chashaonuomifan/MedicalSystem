@@ -1,0 +1,60 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/login/login",
+    "pages/renewalMedicine/renewalMedicine",
+    "pages/health/health",
+    
+    
+    "pages/success/success",
+    "pages/doctorDetail/doctorDetail",
+    "pages/preDetail/preDeatil",
+    "pages/my/my",
+    "pages/info/info",
+    "pages/askdoc/askdoc",
+    "pages/talkdoc/talkdoc",
+    "pages/mydetail/mydetail",
+    "pages/news/news",
+    "pages/newsDetail/newsDetail",
+    "pages/medicine/medicine",
+    "pages/medicine_detail/medicine_detail",
+    "components/SearchBar",
+    "pages/Search/Search",
+    "pages/people/people",
+    "pages/selectP/selectP",
+    "pages/ShouCang/ShouCang"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5aac71",
+    "navigationBarTitleText": "智慧医疗",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/1.png",
+      "selectedIconPath": "/images/s1.png"
+    },
+  {
+    "pagePath": "pages/info/info",
+    "text": "消息",
+    "iconPath": "/images/2.png",
+    "selectedIconPath": "/images/s2.png"
+  },
+  {
+    "pagePath": "pages/my/my",
+    "text": "我的",
+    "iconPath": "/images/3.png",
+    "selectedIconPath": "/images/s3.png"
+  }
+  ]
+  },
+ 
+  "sitemapLocation": "sitemap.json"
+  
+
+}

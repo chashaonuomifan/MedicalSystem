@@ -1,0 +1,6 @@
+<image src="../../images/success.png"></image>
+<view class="v1">预约挂号成功</view>
+<view class="v3">您的单号：A{{num}}</view>
+<view class="v2">您可以在消息页中查询详情</view>
+
+<button  style="width: 350px;"class="b1" bind:tap="gotoindex">返回首页</button>

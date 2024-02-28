@@ -1,0 +1,42 @@
+<SearchBar></SearchBar>
+<view class="main">
+  <!--left-->
+     <scroll-view scroll-y="true" class="left">
+         <view wx:for="{{medicine}}"
+          data-index="{{item.index}}"
+          data-id="{{item.id}}"
+          class="type {{currentIndex==index?'active':''}}" 
+          bind:tap="handleType"
+         >
+          <text class="category-name " >
+          {{item.type}}
+          </text>
+        </view>
+    </scroll-view>
+
+  <!--right-->
+  <scroll-view scroll-y="true"  scroll-into-view="{{toView}}" class="right">
+      <view class="content">
+        <view class="category-list" 
+        wx:for="{{medicine}}"
+        id="{{item.id}}"
+        >
+          <view class="header">{{item.type}}</view>
+          <view class="medicine-list">
+          <view
+          class="medicine-list-item" 
+          wx:for="{{item.medicine_list}}" 
+          data-name="{{item.name}}"
+          data-src="{{item.src}}"
+          data-description="{{item.description}}"
+          data-use="{{item.use}}"
+          bind:tap="gotoDetail"
+          >
+              <image src="{{item.src}}" mode="widthFix"></image>
+              <text>{{item.name}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view> 

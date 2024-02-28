@@ -1,0 +1,136 @@
+.container {
+  margin-top: -85px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.header {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name,
+.gender,
+.age {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.label {
+  font-size: 14px;
+  color: #666;
+}
+
+.input {
+  flex: 1;
+  height: 24px;
+  margin-left: 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.menu {
+  flex: 1;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.section-list {
+  max-height: 400px;
+}
+
+.section-item {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.section-item.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.main {
+  flex: 3;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin-right: 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+.logo {
+  width: 190rpx;
+  height: 190rpx;
+  margin-right: 100rpx;
+  margin-top:100rpx;
+
+
+}
+.swiper {
+  width: 100%;
+  height: 150rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}

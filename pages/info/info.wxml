@@ -1,0 +1,7 @@
+<view class="v" wx:for="{{predetails}}" wx:key="*this" data="{{item}}" bind:tap="gotopreDetail" data-index="{{index}}">
+  <image src="../../images/guahao.png"></image>
+  <view class="v1">挂号通知</view>
+  <view class="v2">挂号成功，请于{{item.date}} {{item.time}}前往芳村医院</view>
+</view>
+
+
